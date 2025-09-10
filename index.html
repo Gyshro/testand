@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jogo Pixel Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-screen">
+            <!-- Cenário do jogo -->
+            <div id="background"></div>
+            
+            <!-- Personagem -->
+            <div id="character"></div>
+            
+            <!-- Elementos interativos -->
+            <div id="window"></div>
+            <div id="table"></div>
+            <div id="chair"></div>
+            <div id="bed"></div>
+            
+            <!-- UI Elements -->
+            <div id="dialog-box" class="hidden">
+                <div id="dialog-text"></div>
+                <div id="dialog-continue">Toque para continuar</div>
+            </div>
+            
+            <div id="instruction-box" class="hidden">
+                <div id="instruction-text"></div>
+            </div>
+            
+            <div id="arrow" class="hidden"></div>
+            
+            <div id="dream-button" class="hidden">
+                <button id="see-dream-btn">Ver Sonho</button>
+            </div>
+            
+            <!-- Tela do sonho -->
+            <div id="dream-screen" class="hidden">
+                <div id="dream-background"></div>
+                <div id="dream-character"></div>
+                <div id="dream-text"></div>
+            </div>
+            
+            <!-- Tela de transição -->
+            <div id="transition-screen" class="hidden"></div>
+            
+            <!-- Joystick Mobile -->
+            <div id="joystick-container" class="hidden">
+                <div id="joystick-base">
+                    <div id="joystick-knob"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio elements -->
+    <audio id="dream-music" loop>
+        <source src="assets/dream_music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
